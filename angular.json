@@ -25,7 +25,12 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/leaflet/dist/images/",
+                "output": "./assets"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -89,7 +94,12 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/leaflet/dist/images",
+                "output": "./assets"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -123,6 +133,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngleaflet"
+    }
+  },
+  "defaultProject": "ngleaflet",
+  "cli": {
+    "analytics": "b563dfe4-cd8a-4ba1-97c0-50a30d5583c3"
+  }
 }
